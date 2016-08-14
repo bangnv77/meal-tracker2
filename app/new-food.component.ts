@@ -8,7 +8,7 @@ import { Food } from './food.model';
     <h3>Log a New Meal Item</h3>
     <form>
       <input placeholder="Name" #newName>
-      <input placeholder="Calories" #newCalories>
+      <input placeholder="Calories" type="number" #newCalories>
       <input placeholder="Details" #newDetails>
       <button (click)="addFood(newName, newCalories, newDetails)">Log Meal Item</button>
     </form>
@@ -27,6 +27,6 @@ export class NewFoodComponent {
     this.onSubmitNewFood.emit(params);
     foodName.value = "";
     foodCalories.value = "";
-    foodDetails.value = ""; 
+    foodDetails.value = "";
   }
 }
