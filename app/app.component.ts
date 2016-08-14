@@ -17,9 +17,9 @@ export class AppComponent {
 
   constructor() {
     this.foods = [
-      new Food("Hotcakes with Sausage", 730, "I was craving some high-calorie food!"),
-      new Food("Yogurt", 190, "Blueberry flavor, yum!"),
-      new Food("Banana", 105, "Eat one everyday."),
+      new Food("Hotcakes with Sausage", 730, "I was craving some high-calorie food!", 0),
+      new Food("Yogurt", 190, "Blueberry flavor, yum!", 1),
+      new Food("Banana", 105, "Eat one everyday.", 2),
     ]
   }
 }
