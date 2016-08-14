@@ -7,9 +7,15 @@ import { Food } from './food.model';
   template: `
     <h3>Log a New Meal Item</h3>
     <form>
-      <input placeholder="Name" #newName>
-      <input placeholder="Calories" type="number" #newCalories>
-      <input placeholder="Details" #newDetails>
+      <div class="form-group">
+        <input placeholder="Name" #newName class="input-lg">
+      </div>
+      <div class="form-group">
+        <input placeholder="Calories" type="number" #newCalories class="input-lg">
+      </div>
+      <div class="form-group">
+        <input placeholder="Details" #newDetails class="input-lg">
+      </div>
       <button (click)="addFood(newName, newCalories, newDetails)">Log Meal Item</button>
     </form>
   `
