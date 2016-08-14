@@ -11,9 +11,11 @@ import { Food } from './food.model';
   <div class="form-group">
     <input [(ngModel)]="food.calories" type="number">
   </div>
-
   <div class="form-group">
     <input [(ngModel)]="food.details">
+  </div>
+  <div class="form-group">
+    <input [(ngModel)]="food.time"j class="input-lg" type="time">
   </div>
   `
 })
